@@ -1,0 +1,45 @@
+.jobListPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 960px;
+
+  .jobList {
+    width: 70%;
+    min-width: 840px;
+  }
+  .pagination {
+    font-size: 30px;
+    font-weight: 400;
+    min-width: 420px;
+  }
+}
+.jobListPage.mobile {
+  min-width: 480px;
+  .jobList {
+    min-width: 420px;
+  }
+  .jobComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .postTime {
+      color: grey;
+      margin-bottom: 0;
+    }
+  }
+  .nav__genericData {
+    display: block;
+  }
+  .pagination {
+    font-size: 30px;
+    font-weight: 400;
+    min-width: 210px;
+  }
+  .job__genericData {
+    display: none;
+  }
+  .jobComponent {
+    height: 15vh;
+  }
+}

@@ -1,0 +1,318 @@
+.jobDetailsPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+  background-color: white;
+
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  color: #3a4562;
+  padding: 5%;
+  .jobDetails {
+    .jobDetails__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5%;
+      .header__actions {
+        width: 35%;
+      }
+      .header__action:nth-of-type(2) {
+        margin-left: 10%;
+      }
+    }
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      .title {
+        width: 50%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: -0.75px;
+      }
+    }
+    .salary {
+      display: flex;
+      flex-direction: column;
+      .salary__p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: -0.5625px;
+      }
+      .salary__p:first-of-type {
+        margin-top: 1.5em;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height, or 125% */
+
+        letter-spacing: -0.625px;
+      }
+      padding-right: 5%;
+    }
+    .jobDetails__postTime {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 133%;
+
+      letter-spacing: -0.5625px;
+
+      color: rgba(56, 65, 93, 0.355988);
+      font-stretch: 100;
+    }
+    .description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .applyBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 18px 30px;
+    gap: 10px;
+    background: #384564;
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 133%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.413333px;
+}
+.pTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: -0.625px;
+}
+.additionalInfo {
+  padding-top: 5%;
+}
+.additionalInfo__title {
+  line-height: 133%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.5625px;
+  color: #3a4562;
+  font-stretch: 100;
+}
+.employmentTypes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.employmentType {
+  box-sizing: border-box;
+  width: 222px;
+  height: 49px;
+  /* Functional/Selected */
+  background: rgba(161, 177, 219, 0.317343);
+  /* Functional/Option border */
+  border: 1px solid rgba(85, 105, 158, 0.3);
+  border-radius: 8px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #55699e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.4px;
+}
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefit {
+  box-sizing: border-box;
+  width: 222px;
+  height: 49px;
+  background: rgba(255, 207, 0, 0.15);
+  border: 1px solid #ffcf00;
+  border-radius: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.4px;
+
+  color: #988b49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.457143px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.attachedImages {
+  display: flex;
+  padding-bottom: 5%;
+  flex-wrap: wrap;
+}
+.attachedImg {
+  width: 209px;
+  height: 115px;
+  border-radius: 10%;
+  padding-right: 1.5%;
+  padding-bottom: 1.5%;
+}
+.returnButton {
+  width: 213px;
+  height: 50px;
+  background: rgba(56, 69, 100, 0.14);
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  margin-bottom: 10%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3a4562;
+}
+.sectionTitle.cardTitle {
+  display: none;
+}
+.card {
+  width: 402px;
+  height: 436px;
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 402px;
+    height: 218px;
+    background: #2a3047;
+    color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    .card__span {
+      padding-left: 20%;
+      margin-top: 2%;
+    }
+  }
+  .card__map {
+    width: 402px;
+    height: 218px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+.jobDetailsPage.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 414px;
+
+  .jobDetails__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .applyBtn:nth-of-type(1) {
+    display: none;
+  }
+
+  .jobDetails {
+    .jobDetails__header {
+      .header__actions {
+        width: 100%;
+      }
+      .header__action:nth-of-type(2) {
+      }
+    }
+    .heading {
+      .title {
+      }
+    }
+    .jobDetails__postTime {
+    }
+    .description {
+    }
+    .article__p {
+    }
+  }
+  .applyBtn {
+    width: 127px;
+    font-size: 12px; //same as desktop apparently
+  }
+  .salary {
+  }
+  .salary__p:first-of-type {
+  }
+  .sectionTitle {
+  }
+  .pTitle {
+  }
+  .additionalInfo {
+  }
+  .additionalInfo__title {
+  }
+  .employmentTypes {
+    flex-wrap: wrap;
+  }
+  .employmentType {
+    width: 122px;
+  }
+  .benefits {
+    flex-wrap: wrap;
+  }
+  .benefit {
+    width: 122px;
+  }
+  .attachedImages {
+    flex-wrap: wrap;
+  }
+  .attachedImg {
+    width: 200px;
+    height: 116px;
+  }
+  .returnButton {
+    display: none;
+  }
+  .sectionTitle.cardTitle {
+    display: block;
+  }
+  .card {
+    width: 372px;
+    margin-left: 0;
+
+    .card__info {
+      width: 372px;
+
+      .card__span {
+      }
+    }
+    .card__map {
+      width: 372px;
+    }
+  }
+}
